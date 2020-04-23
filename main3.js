@@ -10,7 +10,7 @@ function getParameterByName(name, url) {
   
   var getAllRecords = function() {
     $.getJSON(
-        "https://api.airtable.com/v0/appqnQX3Ik0PfwHVo/R&B?api_key=keyDlORmR31pOGDpu",
+        "https://api.airtable.com/v0/appqnQX3Ik0PfwHVo/EDM?api_key=keyDlORmR31pOGDpu",
       function(airtable) {
         var html = [];
         $.each(airtable.records, function(index, record) {

@@ -4,6 +4,7 @@ h1 {
     text-align: center;
     font-family: 'Monoton', cursive;
     font-size: 100px;
+    background-color: rgb(127, 183, 233);
 }
 
 h2 {
@@ -12,6 +13,12 @@ h2 {
     font-weight: bold;
     background-color: purple;
     border: solid 3px black;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    background-color: rosybrown;
 }
 
 main {
@@ -39,4 +46,15 @@ main {
     justify-content: center;
     align-content: center;
 
+}
+
+.container {
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    margin-bottom: 10px;
 }
