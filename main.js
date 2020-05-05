@@ -21,21 +21,22 @@ function getParameterByName(name, url) {
           var song2 = record.fields["Song2"];
           var song3 = record.fields["Song3"];
           var songs = record.fields["Songs"];
-          html.push(listView(id, artist, song1, song2, song3));
+          var descr = record.fields["Description"];
+          html.push(listView(id, artist, song1, song2, song3, descr));
         });
         $(".list-view").append(html);
       }
     );
   };
   
-  var listView = function(id, artist, song1, song2, song3) {
+  var listView = function(id, artist, song1, song2, song3, descr) {
     return `
     <div class="col-sm-6">
     <div class="card">
     <img src="..." class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${artist}</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">${descr}</p>
     </div>
     <ul class="list-group list-group-flush">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/${song1}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
