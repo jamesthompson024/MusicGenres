@@ -33,7 +33,6 @@ var listView = function(id, artist, song1, song2, song3, descr) {
   return `
   <div class="col-sm-6">
   <div class="card">
-  <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${artist}</h5>
     <p class="card-text">${descr}</p>

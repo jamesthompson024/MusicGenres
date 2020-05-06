@@ -15,7 +15,14 @@ h2 {
     border: solid 3px black;
 }
 
+h3 {
+    text-align: center;
+    color: green;
+    font-size: 30px;
+}
+
 h5 {
+    text-align: center;
     font-size: 50px;
     color: royalblue;
     font-family: 'Righteous' ;
@@ -26,7 +33,6 @@ p {
     font-size: 15px;
     font-weight: bold;
     color: #363237;
-    background-color: #d09683;
 }
 
 main {
@@ -69,4 +75,8 @@ main {
 
 .card-body {
     color: green;
+}
+
+.list-group {
+    align-items: center;
 }

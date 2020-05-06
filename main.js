@@ -33,7 +33,7 @@ function getParameterByName(name, url) {
     return `
     <div class="col-sm-6">
     <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">${artist}</h5>
       <p class="card-text">${descr}</p>

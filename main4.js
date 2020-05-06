@@ -10,7 +10,7 @@ function getParameterByName(name, url) {
   
   var getAllRecords = function() {
     $.getJSON(
-        "https://api.airtable.com/v0/appqnQX3Ik0PfwHVo/EDM?api_key=keyDlORmR31pOGDpu",
+        "https://api.airtable.com/v0/appqnQX3Ik0PfwHVo/Random?api_key=keyDlORmR31pOGDpu",
       function(airtable) {
         var html = [];
         $.each(airtable.records, function(index, record) {
@@ -33,9 +33,9 @@ function getParameterByName(name, url) {
     return `
     <div class="col-sm-6">
     <div class="card">
+    <img src="" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">${artist}</h5>
-      <p class="card-text">${descr}</p>
     </div>
     <ul class="list-group list-group-flush">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/${song1}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
